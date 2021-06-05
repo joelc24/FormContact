@@ -31,27 +31,27 @@
             <form action="" id="form">
               <p>
                 <label>Full Name</label>
-                <input type="text" name="fulname" id="fullname">
+                <input type="text" name="fulname" id="fullname" required>
               </p>
 
               <p>
                 <label>Email Adrees</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
               </p>
 
               <p>
                 <label>Phone</label>
-                <input type="text" name="phone" id="phone" maxlength="10" onkeypress="return valideKey(event);">
+                <input type="text" name="phone" id="phone" maxlength="10" onkeypress="return valideKey(event);" required>
               </p>
 
               <p>
                 <label>Affair</label>
-                <input type="text" name="affair" id="affair">
+                <input type="text" name="affair" id="affair" required>
               </p>
 
               <p class="block">
                 <label>Message</label>
-                <textarea name="Message" rows="3" id="message"></textarea>
+                <textarea name="Message" rows="3" id="message" required></textarea>
               </p>
               <div id="error"></div>
 
