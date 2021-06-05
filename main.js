@@ -62,6 +62,9 @@ form.addEventListener('submit', e=>{
   if(phone.value === null || phone.value === '' || phone.value.length < 10){
     mensajeError.push('ingresa tu numero telefonico');
   }
+  else if(isNaN(phone)){
+    mensajeError.push('el telefono ingresado no es un numero');
+  }
 
   if(affair.value === null || affair.value === ''){
     mensajeError.push('ingresa tu asunto');
