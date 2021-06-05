@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS            -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- FONT-AWESOME                    -->
+    <script src="https://kit.fontawesome.com/d72eeb8bfb.js" crossorigin="anonymous"></script>
+    <!-- Animate Css        -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+
+      <div class="content">
+
+        <h1 class="logo"> Contac <span>Us</span></h1>
+
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+
+            <form action="" id="form">
+              <p>
+                <label>Full Name</label>
+                <input type="text" name="fulname" id="fullname">
+              </p>
+
+              <p>
+                <label>Email Adrees</label>
+                <input type="email" name="email" id="email">
+              </p>
+
+              <p>
+                <label>Phone</label>
+                <input type="text" name="phone" id="phone" maxlength="10" onkeypress="return valideKey(event);">
+              </p>
+
+              <p>
+                <label>Affair</label>
+                <input type="text" name="affair" id="affair">
+              </p>
+
+              <p class="block">
+                <label>Message</label>
+                <textarea name="Message" rows="3" id="message"></textarea>
+              </p>
+              <div id="error"></div>
+
+              <p class="block">
+                <button type="submit">
+                  Send
+                </button>
+              </p>
+
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>More Info</h3>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i>Baker Street</li>
+
+              <li><i class="fas fa-phone"></i>111 - 111 - 111</li>
+
+              <li><i class="fas fa-envelope-open-text"></i>Contact@website.com</li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, quibusdam sint! Iste mollitia atque laborum, natus dolores reiciendis sit consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p class="copy"><span>&copy Company</span>Studio.com</p>
+      </footer>
+
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
